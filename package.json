@@ -1,0 +1,32 @@
+{
+  "name": "sesvam",
+  "version": "1.0.0",
+  "description": "software educativo para la simulación y visualizasiín de algoritmos metaheuristicos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devhexloper/sesvam.git"
+  },
+  "keywords": [
+    "electron.js",
+    "js",
+    "javascript",
+    "react",
+    "webassembly",
+    "metaheuristics",
+    "metaheuristicas"
+  ],
+  "author": "Armando Fabian Gonzalez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devhexloper/sesvam/issues"
+  },
+  "homepage": "https://github.com/devhexloper/sesvam#readme",
+  "engines": {
+    "node": ">=20.11.1",
+    "npm": ">=10.2.4"
+  }
+}
