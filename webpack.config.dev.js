@@ -14,7 +14,7 @@ const webpackConfig = {
   ,
   output: {
     path: path.resolve(CURRENT_WORKING_DIR, 'dist'),
-    filename: 'renderer.bundle.js' // Usamos [name] para generar nombres de archivos dinámicos
+    filename: 'renderer.bundle.js' 
   },
   module: {
     rules: [
@@ -48,7 +48,8 @@ const webpackConfig = {
   plugins: [
   
    new  HtmlWebpackPlugin({
-      template:path.resolve(CURRENT_WORKING_DIR, '/frontend/public/index.html')
+      template:path.resolve(CURRENT_WORKING_DIR, '/frontend/public/index.html'),
+      inject: 'body'
     })
   ]
 };
