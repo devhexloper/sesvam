@@ -1,11 +1,7 @@
-import React from "react";
-
+import React from 'react'
+import MainContainer from './src/pages/Maincontainer'
 const App = () => {
-  return (
-    <>
-      <h1>Hello World</h1>
-    </>
-  );
-};
+  return <MainContainer></MainContainer>
+}
 
-export default App;
+export default App

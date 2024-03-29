@@ -1,0 +1,23 @@
+:root{
+    --dark-primary-color-500  : #151719;
+    --dark-secondary-color-900: #0A0D10;
+    --purple-accent-color: #715AFF;
+    --white-primary-color-50: #F6F6F6;
+    --white-secondary-color-500: #C7C7C7;
+}
+
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+/* components */
+
+
+
+
+
+
+/* utilities */
+
