@@ -1,22 +1,17 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import Resizable from 'react-resizable-layout';
- 
- 
+import ResizableContainer from './../core/components/ResizableContainer.jsx'
 
 const MainContainer = () => {
   return (
     <Container fluid>
       <Row>
-        <h1>
-            holaaaaaa
-        </h1>
+        <ResizableContainer resizeSide={true} minSize={100} maxSize={700}>
+          <h1>resizable</h1>
+        </ResizableContainer>
       </Row>
     </Container>
-  );
-};
+  )
+}
 
-export default MainContainer;
-
-
- 
+export default MainContainer

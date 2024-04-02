@@ -1,0 +1,13 @@
+.resizable-container {
+    overflow: hidden;
+    border: 1px solid #000000;
+    color: #000000;
+  }
+  
+  .resizable-cursor-h {
+    cursor: col-resize;
+  }
+  .resizable-cursor-v {
+    cursor: row-resize;
+  }
+  

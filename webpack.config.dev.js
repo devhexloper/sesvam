@@ -33,7 +33,12 @@ const webpackConfig = {
               ],
               '@babel/preset-react'
             ],
-            plugins: ['@babel/plugin-syntax-jsx']
+            plugins: [
+              '@babel/plugin-syntax-jsx',
+         
+              
+              
+            ]
           }
         }
       },
