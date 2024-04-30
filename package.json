@@ -5,7 +5,7 @@
   "main": "./backend/main.js",
   "scripts": {
     "dev": "webpack --config webpack.config.dev.js --watch --stats-children",
-    "start": "electron --trace-warnings .",
+    "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
@@ -42,9 +42,11 @@
     "babel-loader": "^9.1.3",
     "bootstrap": "^5.3.3",
     "electron": "^29.1.5",
+    "nodemon": "^3.1.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-resizable": "^3.0.5"
   },
   "devDependencies": {
     "@babel/plugin-syntax-jsx": "^7.24.1",

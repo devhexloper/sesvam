@@ -1,0 +1,5 @@
+{
+    "watch": "./frontend",
+    "verbose":true,
+    "exec": "electron --trace-warnings ."
+}
