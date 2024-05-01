@@ -1,37 +1,38 @@
 import React from 'react'
-import { Container, Row,} from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import Footer from '../components/Footer.jsx'
-
+import { ResizableBox } from 'react-resizable'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './../styles/ResizableContainer.css'
 
-import Console from '../core/components/Console.jsx';
+import Console from '../core/components/Console.jsx'
+const widthPanel = window.innerWidth - 300
+const heightPanel = window.innerHeight
+
 const MainContainer = () => {
   return (
     <Container fluid className="container-fluid bg-dark-primary min-vh-100">
       <Row>
-        {/* <ResizableContainer
-      
-          resizeSide={false}
-          minSize={100}
-          maxSize={300}
-        >
-          <h1>ggggg</h1>
-        </ResizableContainer>
-      </Row>
-      <Row>
-        <ResizableContainer
-      
-          resizeSide={false}
-          minSize={0}
-          maxSize={400}
-        >
-          <h1>ggggg</h1>
-        </ResizableContainer> */}
-<Console></Console>
-<Footer></Footer>
-      </Row>
+        <Col>
+          <Row>
+            <ResizableBox
+              className="resizable-container"
+              width={widthPanel}
+              height={400}
+              axis="both"
+            >
+              <div>Canvas</div>
+            </ResizableBox>
+          </Row>
+          <Row>
+            <Console></Console>
+          </Row>
+        </Col>
 
+        <Row>
+          <Footer></Footer>
+        </Row>
+      </Row>
     </Container>
   )
 }

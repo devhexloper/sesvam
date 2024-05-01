@@ -11,10 +11,11 @@ const Console = () => {
   const handleTabClick = (newTab) => {
     setTab(newTab);
   };
-
+  const widthPanel = window.innerWidth - 300
+  const heightPanel = window.innerHeight
   return (
     <>
-      <ResizableBox className="resizable-container" width={500} height={300} axis="both">
+      <ResizableBox className="resizable-container" width={widthPanel} height={300} axis="both">
         <div className="tab-container">
           <div className="tab-items">
             <div className={`tab-links ${tab === 'consola' ? 'tab-active' : ''}`} onClick={() => handleTabClick('consola')}>CONSOLA</div>
