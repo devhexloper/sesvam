@@ -4,7 +4,7 @@ import Footer from '../components/Footer.jsx'
 import { ResizableBox } from 'react-resizable'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './../styles/ResizableContainer.css'
-
+import RigthPanel from '../core/components/RigthPanel.jsx'
 import Console from '../core/components/Console.jsx'
 const widthPanel = window.innerWidth - 300
 const heightPanel = window.innerHeight
@@ -28,7 +28,9 @@ const MainContainer = () => {
             <Console></Console>
           </Row>
         </Col>
-
+        <Col>
+          <RigthPanel></RigthPanel>
+        </Col>
         <Row>
           <Footer></Footer>
         </Row>
